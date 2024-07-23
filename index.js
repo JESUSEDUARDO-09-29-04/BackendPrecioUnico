@@ -31,7 +31,7 @@ const Pool = mysql.createPool({
   connectionLimit: 10, 
   queueLimit: 0
 });   
-console.log("object1");
+console.log("object");   
 Pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.code);
