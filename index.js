@@ -9,7 +9,7 @@ const RouterProductos = require("./routers/Productos.routes");
 const RouterInventario = require("./routers/Inventario.routers");
 
 app.use(cors());
-
+app.use(express.json());
 app.use(bodyParser.json());
 
 // const Pool = mysql.createPool({
@@ -31,7 +31,7 @@ const Pool = mysql.createPool({
   connectionLimit: 10, 
   queueLimit: 0
 });   
-console.log("Prueba");
+console.log("Prueba"); 
 Pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.code);
