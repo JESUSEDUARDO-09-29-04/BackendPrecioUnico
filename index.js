@@ -28,10 +28,10 @@ const Pool = mysql.createPool({
   password: 'chucho',
   database: 'bd_preciounico',
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: 10, 
   queueLimit: 0
 });  
-   console.log("Prueba2");
+console.log("Prueba");
 Pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.code);
