@@ -11,6 +11,7 @@ const RouterInventario = require("./routers/Inventario.routers");
 app.use(cors());
 
 app.use(bodyParser.json());
+
 // const Pool = mysql.createPool({
 //   host: 'srv900.hstgr.io', // O usa '191.101.13.154'
 //   user: 'u531493727_adela',
@@ -30,7 +31,7 @@ const Pool = mysql.createPool({
   connectionLimit: 10,
   queueLimit: 0
 });  
-   console.log("Prueba");
+   console.log("Prueba2");
 Pool.getConnection((err, connection) => {
   if (err) {
     console.error('Error connecting to MySQL:', err.code);
