@@ -23,14 +23,14 @@ app.use(bodyParser.json());
 // });
 
 const Pool = mysql.createPool({
-  host: '172.31.98.25', 
+  host: '172.20.10.4', 
   user: 'chucho',
   password: 'chucho',
   database: 'bd_preciounico',
   waitForConnections: true,
   connectionLimit: 10, 
   queueLimit: 0
-});  
+});   
 console.log("Prueba");
 Pool.getConnection((err, connection) => {
   if (err) {
